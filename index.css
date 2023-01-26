@@ -1,0 +1,295 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #1A2238;
+    /*background-image: url("images/dark.jpg");*/
+    
+  
+}
+.box{
+    position: fixed;
+    width: 100%;
+    height: 100vh; 
+    background-color: black;
+    
+    
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 0.7s ;
+}
+.logo path{
+    stroke-dasharray: 2229;
+    stroke-dashoffset: 2229;
+    animation: text-anim 5s ease forwards;
+}
+@keyframes text-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+@keyframes splash {
+    from{
+        top:0;
+    }
+    to{
+        top: -100vh;
+    }
+}
+
+#icon__img{
+    margin-top: 15px;
+    margin-left: 15px;
+    max-width: 100px;
+    height: auto;
+    margin-right: 0;
+}
+
+.intro{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 50px;
+    font-family: 'Rum Raisin', sans-serif;
+    display: flex;
+    background-image: linear-gradient(90deg, #141C26, transparent);
+    padding: 50px;
+    border-radius: 50px;
+}
+#header{
+    display: block;
+}
+#intro__header{
+    color: #EA445A;
+}
+#intro__desc{
+    color: lightcyan;;
+}
+#intro__img{
+    max-width: 320px;
+    height: auto;
+    border-radius: 50px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+#intro__header{
+    font-size: 80px;
+    font-weight: 200;
+}
+
+#intro__desc{
+    font-size: 40px;
+    font-weight: 200;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about{
+    display: block;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-family: 'Rum Raisin', sans-serif;;
+}
+
+#about__title{
+    font-size: 60px;
+    font-weight: 200;
+    color: orange;
+}
+.about__text{
+    color: lightcyan;
+    font-size: 30px;
+    font-weight: 200;
+    max-width: 500px;
+    font-family: 'Teko', sans-serif;;
+}
+
+.resume{
+    margin-top: 250px;
+    margin-right: 250px;
+}
+#resume{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    background-color: #BD1E51;
+    text-decoration: none;
+    font-family:'Teko', sans-serif; 
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+#resume:hover{
+    background-color: white;
+    color: #BD1E51;
+}
+
+.icons{
+    color: white;
+    margin-top: 50px;
+}
+.book{
+    border: 2px white;
+    padding: 5px;
+}
+
+#projects__title{
+    font-size: 60px;
+    font-weight: 200;
+    color: orange;
+    font-family: 'Rum Raisin', sans-serif;
+    text-align: center;
+}
+#projects{
+    font-family: 'Teko', sans-serif;
+    
+}
+#react__icon{
+   width: 60px;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.proj{
+    display: block;
+    justify-content: space-around;
+    background-color: aliceblue;
+    border-radius: 1.5rem;
+    padding: .5rem ;
+    transition: 200ms transform ease-in-out;
+}
+.proj:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+#leads{
+    width: 100%;
+    height: 200px;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+}
+#proj1__info{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 500px;
+    font-family: 'Teko', sans-serif;
+    margin-top: 20px;
+    
+}
+.proj__lang{
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    max-width: 500px;
+    font-family: 'Teko', sans-serif;
+}
+#skills{
+  margin-top: 100px;
+  text-align: center;
+  background-color: #E1E2E2;
+  border-radius: 20px;
+}
+#skills__title{
+    font-size: 60px;
+    font-weight: 200;
+    color: orange;
+    font-family: 'Rum Raisin', sans-serif;
+    text-align: center;
+}
+#skill__data{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.skill p{
+    color: #141C26;
+}
+#css, #js, #react{
+    max-width: 50px;
+    height: auto;
+}
+.skill__info{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+#face{
+    color: antiquewhite;
+    width: 20px;
+}
+#github{
+    width: 50px;
+}
+footer img {
+    margin: 10px;
+}
+#social{
+   right: 0;
+   bottom: 0;
+}
+#social-title{
+    color: black;
+    font-size: 30px;
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+.review{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    right: 0;
+    text-decoration: none;
+    color: black;
+    border: black 2px solid;
+    border-radius: 5px;
+    box-shadow: 5px;
+}
+.review:hover{
+    background-color: gray;
+}
+.home{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Rum Raisin', sans-serif;
+    color: lightskyblue;
+    font-weight: 700;
+   left: auto;
+}

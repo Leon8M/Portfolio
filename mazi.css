@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("images/dark.jpg");
+}
+#icon__img{
+    margin-top: 15px;
+    margin-left: 15px;
+    max-width: 100px;
+    height: auto;
+    margin-right: 0;
+}
+.home{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Rum Raisin', sans-serif;
+    color: lightskyblue;
+    font-weight: 700;
+    left: auto;
+}
+.project{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+    text-decoration: underline;
+    color: lightskyblue;
+    font-family: 'Rum Raisin', sans-serif;;
+}
+.project-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: aqua;
+    font-family:'Teko', sans-serif; 
+}
+.group{
+    display: flex;
+}
+.project-info{
+    margin: 10px;
+    color: lightcyan;
+    font-size: 30px;
+    font-weight: 200;
+    max-width: 500px;
+    font-family: 'Teko', sans-serif;;
+}
+#mazi{
+    width: 650px;
+    height: auto;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+}
