@@ -93,9 +93,24 @@
           <p class="skill__info">React.js</p>
         </div>
         <div class="skill">
-          <img src="images/css3.png" alt="Css3" id="css">
+          <img src="images/tailwindcss.png" alt="Css3" id="css">
          <p class="skill__info">Css3</p>
         </div>
+       </div>
+       <div class="contact">
+        <form action="send-email.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        
+          <button type="submit">Send</button>
+        </form>
+        
        </div>
     
          <script src="index.js"></script>
