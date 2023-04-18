@@ -293,3 +293,51 @@ footer img {
     font-weight: 700;
    left: auto;
 }
+.contact{
+    background-color: white;
+    border-radius: 20px;
+}
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact button[type=submit],
+.contact button[type=reset] {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button[type=submit],
+.contact button[type=reset]:hover {
+  background-color: #0069d9;
+}
