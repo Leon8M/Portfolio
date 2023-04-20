@@ -7,7 +7,7 @@
 body{
     max-width: 100%;
     min-height: 100vh;
-    background-color: #1A2238;
+    background-color: black;
     /*background-image: url("images/dark.jpg");*/
     
   
@@ -53,7 +53,15 @@ body{
         top: -100vh;
     }
 }
-
+.all{
+scroll-snap-type: y proximity;
+overflow-y: scroll;
+height: 100vh;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: start;
+}
 #icon__img{
     margin-top: 15px;
     margin-left: 15px;
@@ -77,9 +85,18 @@ body{
 }
 #intro__header{
     color: #EA445A;
+    opacity: 0;
+    animation: appear 0.7s ease-out 2s forwards
 }
 #intro__desc{
-    color: lightcyan;;
+    color: lightcyan;
+    opacity: 0;
+    animation: appear 0.7s ease-out 3s forwards
+}
+@keyframes appear{
+    100%{
+        opacity: 1;
+    }
 }
 #intro__img{
     max-width: 320px;
