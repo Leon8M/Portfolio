@@ -7,7 +7,7 @@
 body{
     max-width: 100%;
     min-height: 100vh;
-    background-image: url("images/dark.jpg");
+    background-color: #141414;
 }
 #icon__img{
     margin-top: 15px;
@@ -16,20 +16,10 @@ body{
     height: auto;
     margin-right: 0;
 }
-.home{
-    text-decoration: none;
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Rum Raisin', sans-serif;
-    color: lightskyblue;
-    font-weight: 700;
-    left: auto;
-}
 .project{
     text-align: center;
     font-size: 60px;
     font-weight: 200;
-    text-decoration: underline;
     color: lightskyblue;
     font-family: 'Rum Raisin', sans-serif;;
 }
@@ -59,4 +49,11 @@ body{
     object-fit: cover;
     aspect-ratio: 16 / 9;
     object-position: center;
+}
+a{
+    text-decoration: underline;
+    color: #fff;
+}
+a:hover{
+    color: aqua;
 }
